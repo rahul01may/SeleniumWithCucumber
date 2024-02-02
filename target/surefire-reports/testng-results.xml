@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-02T16:27:23 GST" name="Surefire suite" finished-at="2024-02-02T16:27:42 GST" duration-ms="19451">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-02-02T16:27:23 GST" name="Surefire test" finished-at="2024-02-02T16:27:42 GST" duration-ms="19451">
+      <class name="CucumberOptions.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" started-at="2024-02-02T16:27:23 GST" name="setUpClass" finished-at="2024-02-02T16:27:24 GST" duration-ms="807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@70f31322]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" started-at="2024-02-02T16:27:24 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-02T16:27:37 GST" duration-ms="13003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for Product Search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Landing page Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" started-at="2024-02-02T16:27:24 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-02T16:27:42 GST" duration-ms="18260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search and Add 3 item bag and PlaceOrder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout and Place Order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" started-at="2024-02-02T16:27:24 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-02T16:27:36 GST" duration-ms="11971" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for Product Search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Landing page Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Beetroot] but found [No data]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Beetroot] but found [No data]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepDefinations.OfferPage_stepDefinations.validate_proiduct_name_in_offerpage_matches_with_Landing_page(OfferPage_stepDefinations.java:50)
+at ✽.validate proiduct name in offerpage matches with Landing page(file:///C:/Users/sacha/eclipse-workspace/CucumberFramework/src/test/java/features/landingPage.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestNGRunner@53fdffa1]" started-at="2024-02-02T16:27:42 GST" name="tearDownClass" finished-at="2024-02-02T16:27:42 GST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestNGRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
